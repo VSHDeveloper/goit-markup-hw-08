@@ -65,37 +65,37 @@ button {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid tomato; */
 }
 /* шапка сайта */
-
-/* logo */
-.logotype {
-  display: flex;
-}
-.nav {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 80px;
 }
+/* logo */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logo {
+  display: flex;
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.logo-top {
+.logo--black {
   color: #000000;
 }
-.logo-top:focus {
-  color: #000000;
-}
-.logo-doun {
+.logo--wite {
   color: var(--primery-wite-color);
 }
-.logo-web {
+.logo_web {
   color: var(--accent-color);
 }
 
@@ -103,13 +103,10 @@ button {
 .site-nav {
   display: flex;
   margin-left: 93px;
-  /* padding: 32px 0; */
 }
 
 .site-nav > li:nth-child(even) {
   margin: 0 50px;
-
-  /* outline: 2px solid orangered; */
 }
 .site-nav .link {
   color: var(--title-text-color);
@@ -142,6 +139,8 @@ button {
 /* site-info */
 .site-info {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .site-info > li {
   display: flex;
@@ -422,7 +421,6 @@ button {
 .futer {
   display: flex;
   background-color: var(--background-color-futer);
-  /* height: 252px; */
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -432,22 +430,27 @@ button {
 .logo-futer {
   margin-right: 70px;
 }
-.futer-text {
+.logo-futer_text {
   color: var(--primery-wite-color);
   display: block;
   font-style: normal;
   margin-top: 20px;
-  /* outline: 2px solid orangered; */
 }
 .futer .link {
   color: rgba(255, 255, 255, 0.6);
   display: block;
   font-style: normal;
-  /* outline: 2px solid orangered; */
 }
-.list > li {
+.logo-futer_list {
   padding-top: 9px;
 }
+.logo-futer_link {
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+  font-style: normal;
+  padding-top: 9px;
+}
+/* social links */
 .social {
   display: flex;
   flex-direction: column;
