@@ -6,7 +6,8 @@
         "../sass/utils/_normalize.scss",
         "../sass/utils/_variables.scss",
         "../sass/utils/_reset-styl.scss",
-        "../sass/base/_base-styles.scss"
+        "../sass/base/_base-styles.scss",
+        "../sass/layout/Header/_logo.scss"
     ],
     "names": [],
     "file": "main.min.css"
