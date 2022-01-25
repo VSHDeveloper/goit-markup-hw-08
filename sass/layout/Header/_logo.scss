@@ -1,0 +1,25 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo {
+  &--black {
+    color: $logo-black;
+  }
+  &--wite {
+    color: $primery-wite-color;
+  }
+}
+.logo__blu {
+  color: $accent-color;
+}
