@@ -12,14 +12,13 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.logo {
-  &--black {
-    color: $logo-black;
-  }
-  &--wite {
-    color: $primery-wite-color;
-  }
+.logo--black {
+  color: $logo-black;
 }
+.logo--wite {
+  color: $primery-wite-color;
+}
+
 .logo__blu {
   color: $accent-color;
 }

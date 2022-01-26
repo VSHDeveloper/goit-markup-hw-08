@@ -5,6 +5,22 @@
 // Base styles
 @import './base/base-styles';
 
+// Components
+@import './components/modal';
+
 // Layout
 @import './layout/Header/heder';
 @import './layout/Header/logo';
+@import './layout/Header/site-nav';
+@import './layout/Header/site-info';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/our-work';
+@import './layout/team';
+@import './layout/Regular-clients';
+@import './layout/Futer/futer';
+@import './layout/Futer/logo';
+@import './layout/Futer/address';
+@import './layout/Futer/social-links';
+@import './layout/Futer/subscription';
+@import './layout/portfolio';

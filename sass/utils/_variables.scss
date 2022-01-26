@@ -1,4 +1,4 @@
-/* лого черный текст #000000 */
+/* логотип черный текст #000000 */
 /* цвет основного текста #757575 */
 /* вторичный цвет текста #212121 */
 /* акцент #2196F3 */
@@ -9,8 +9,9 @@
 /* цвет фона hero #c4c4c4;*/
 /* фоновое изображение hero rgba(47, 48, 58, 0.4);*/
 /* анимация  cubic-bezier(0.4, 0, 0.2, 1);*/
+/* цвет иконок #AFB1B8 */
 
-$logo-black:#000000
+$logo-black: #000000;
 $primery-text-color: #757575;
 $title-text-color: #212121;
 $accent-color: #2196f3;
@@ -21,3 +22,4 @@ $background-color-team: #f5f4fa;
 $background-color-hero: #c4c4c4;
 $background-image-hero: rgba(47, 48, 58, 0.4);
 $animation: cubic-bezier(0.4, 0, 0.2, 1);
+$icon-color: #afb1b8;

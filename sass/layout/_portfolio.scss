@@ -1,0 +1,105 @@
+.section__menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding-top: 94px;
+}
+
+.section__nav {
+  margin-right: 8px;
+}
+
+.section__nav {
+  &:last-child {
+    margin: 0px;
+  }
+}
+
+.section__button {
+  color: $title-text-color;
+  background-color: $background-color-team;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  font-family: inherit;
+  border: none;
+  padding: 6px 22px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: $animation;
+  &:hover,
+  &:focus {
+    color: $primery-wite-color;
+    background-color: $accent-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section__cards {
+  margin-top: -30px;
+  margin-left: -30px;
+  padding-bottom: 94px;
+}
+.cards__link {
+  cursor: pointer;
+  margin-top: 30px;
+  margin-left: 30px;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: $animation;
+}
+.cards__link {
+  flex-basis: calc(100% / 3 - 30px);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+.cards__imag {
+  position: relative;
+  overflow: hidden;
+}
+.cards-aside {
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  .cards__item:hover & {
+    transform: translateY(-100%);
+  }
+}
+.cards__cards-aside {
+  transform: translateY(0%);
+  background-color: rgba(33, 150, 243, 0.9);
+  transition: transform 250ms $animation;
+}
+.cards-aside__text {
+  color: $primery-wite-color;
+  font-size: 18px;
+  line-height: 1.56;
+  padding: 63px 24px;
+}
+.cards__description {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+}
+.cards__title {
+  color: $title-text-color;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.cards__text {
+  color: $primery-text-color;
+  font-size: 16px;
+  line-height: 1.9;
+}

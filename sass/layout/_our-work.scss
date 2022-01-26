@@ -1,0 +1,40 @@
+.works {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.title {
+  color: $title-text-color;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.imeges {
+  display: flex;
+  margin-top: 50px;
+}
+.imeges__item {
+  margin-right: 30px;
+  position: relative;
+}
+.imeges__item {
+  &:last-child {
+    margin: 0;
+  }
+}
+.aside {
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.aside__text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  padding: 27px 0 27px;
+  text-transform: uppercase;
+  color: $primery-wite-color;
+}
