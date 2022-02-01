@@ -1,6 +1,10 @@
 .works {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  @media (max-width: 1199px) {
+    display: none;
+  }
 }
 .title {
   color: $title-text-color;
