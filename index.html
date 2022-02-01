@@ -58,6 +58,76 @@
             >
           </li>
         </ul>
+
+        <!-- Мобильное меню -->
+        <button class="button-open">
+          <svg
+            class="button-open__icon"
+            width="40"
+            height="40"
+            aria-label="Переключатеь мобильного меню"
+          >
+            <use href="./images/symbol-defs.svg#menu"></use>
+          </svg>
+        </button>
+
+        <div class="menu is-hidden">
+          <button class="menu__button-close">
+            <svg class="menu__icon" width="40" height="40">
+              <use href="./images/symbol-defs.svg#close"></use>
+            </svg>
+          </button>
+
+          <div class="mob-menu">
+            <div class="menu-block">
+              <ul class="menu__list">
+                <li class="menu__link-content">
+                  <a href="./index.html" class="menu__site-nav current">Студия</a>
+                </li>
+                <li class="menu__link-content">
+                  <a href="./portfolio.html" class="menu__site-nav">Портфолио</a>
+                </li>
+                <li class="menu__link-content">
+                  <a href="" class="menu__site-nav">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="contact-block">
+              <ul class="menu__list">
+                <li class="menu__list-contact">
+                  <a href="tel:+380961111111" class="menu__mob-link"> +38 096 111 11 11</a>
+                </li>
+                <li class="menu__list-contact">
+                  <a href="mailto:info@devstudio.com" class="menu__mail-link">
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="social">
+              <ul class="social__menu">
+                <li class="social__list">
+                  <a href="" target="_blank" class="social__link"
+                    >Instagram<span class="social__line"></span
+                  ></a>
+                </li>
+                <li class="social__list">
+                  <a href="" target="_blank" class="social__link"
+                    >Twitter<span class="social__line"></span
+                  ></a>
+                </li>
+                <li class="social__list">
+                  <a href="" target="_blank" class="social__link"
+                    >Facebook<span class="social__line"></span
+                  ></a>
+                </li>
+                <li class="social__list">
+                  <a href="" target="_blank" class="social__link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </header>
     </div>
     <main>
@@ -79,7 +149,7 @@
                   <use href="images/symbol-defs.svg#antenna"></use>
                 </svg>
               </div>
-              <h3 class="features-title">Внимание к деталям</h3>
+              <h3 class="features-box__title">Внимание к деталям</h3>
               <p>
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
@@ -90,7 +160,7 @@
                   <use href="images/symbol-defs.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="features-title">Пунктуальность</h3>
+              <h3 class="features-box__title">Пунктуальность</h3>
               <p>
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
@@ -101,7 +171,7 @@
                   <use href="images/symbol-defs.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="features-title">Планирование</h3>
+              <h3 class="features-box__title">Планирование</h3>
               <p>
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>

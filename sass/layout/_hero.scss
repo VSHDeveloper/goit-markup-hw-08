@@ -1,45 +1,145 @@
 .hero {
-  background-color: $background-color-hero;
-  height: 600px;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 200px 0px;
-  background-image: linear-gradient(to right, $background-image-hero, $background-image-hero),
-    url(../images/img1.jpg);
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 480px;
+
+    background-image: linear-gradient(to right, $background-image-hero, $background-image-hero),
+      url('/images/Mobile/Headerimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    background-color: $background-color-hero;
+    text-align: center;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, $background-image-hero, $background-image-hero),
+        url('/images/Mobile/Headerimg@2x.jpg');
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: auto;
+    margin-left: auto;
+    background-size: cover;
+    background-image: linear-gradient(to right, $background-image-hero, $background-image-hero),
+      url('/images/Table/Headerimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    background-color: $background-color-hero;
+    text-align: center;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, $background-image-hero, $background-image-hero),
+        url('/images/Table/Headerimg@2x.jpg');
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(to right, $background-image-hero, $background-image-hero),
+      url('/images/img1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-color: $background-color-hero;
+    text-align: center;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, $background-image-hero, $background-image-hero),
+        url('/images/Img1@2x.jpg');
+    }
+  }
 }
 .hero__title {
+  margin-bottom: 30px;
+  margin-top: 0;
   color: $primery-wite-color;
-  font-family: Roboto;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  @media (min-width: 481px) {
+    font-size: 26px;
+    line-height: calc(42 / 26);
+  }
+  @media (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+  // color: $primery-wite-color;
+  // font-family: Roboto;
+  // font-weight: 900;
+  // font-size: 44px;
+  // line-height: 1.36;
+  // text-align: center;
+  // letter-spacing: 0.06em;
+  // text-transform: uppercase;
 }
 .hero__button {
-  color: $primery-wite-color;
-  background-color: $accent-color;
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.9;
-  display: flex;
-  text-align: center;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  margin: auto;
-  margin-top: 30px;
-  padding: 10px 32px;
+  display: inline-block;
   border-radius: 4px;
+  border: 1px solid transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: $animation;
+  padding: 10px 32px;
+  min-width: 200px;
+  cursor: pointer;
+  background-color: $accent-color;
+  color: $primery-wite-color;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-decoration: none;
+
+  transition: color background-color 250ms $animation;
+
   &:hover,
   &:focus {
     color: $primery-wite-color;
     background-color: $accent-color-hover-button;
   }
+
+  // color: $primery-wite-color;
+  // background-color: $accent-color;
+  // font-family: Roboto;
+  // font-weight: bold;
+  // font-size: 16px;
+  // line-height: 1.9;
+  // display: flex;
+  // text-align: center;
+  // letter-spacing: 0.06em;
+  // cursor: pointer;
+  // margin: auto;
+  // margin-top: 30px;
+  // padding: 10px 32px;
+  // border-radius: 4px;
+  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  // transition-property: color, background-color;
+  // transition-duration: 250ms;
+  // transition-timing-function: $animation;
+  // &:hover,
+  // &:focus {
+  //   color: $primery-wite-color;
+  //   background-color: $accent-color-hover-button;
+  // }
 }
