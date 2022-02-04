@@ -861,10 +861,20 @@ button {
 
 .team {
   background-color: #f5f4fa;
-  font-size: 16px;
-  line-height: 1.19;
-  padding-top: 94px;
-  padding-bottom: 94px;
+}
+
+@media (max-width: 1199px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .title {
@@ -892,21 +902,81 @@ button {
   text-align: center;
 }
 
-.card-set {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 50px;
+@media (max-width: 767px) {
+  .card-set {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 1199px) {
+  .card-set {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin: -15px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-set {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
 }
 
 .card-set__item {
-  background-color: #ffffff;
-  margin-right: 30px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   -webkit-border-radius: 0px 0px 4px 4px;
           border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .card-set__item {
+    max-width: 354px;
+    margin: 15px;
+    width: -webkit-calc((100% - 4 * 15px) / 2);
+    width: calc((100% - 4 * 15px) / 2);
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-set__item {
+    max-width: 270px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card-set__item {
+    margin-bottom: 30px;
+    max-width: 450px;
+  }
 }
 
 .card-set__item:last-child {
