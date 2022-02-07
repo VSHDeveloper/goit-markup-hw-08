@@ -12,6 +12,14 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+.logo__header {
+  @media (max-width: 1199px) {
+    font-size: 24px;
+  }
+  @media (min-width: 768px) {
+    margin-right: 93px;
+  }
+}
 .logo--black {
   color: $logo-black;
 }

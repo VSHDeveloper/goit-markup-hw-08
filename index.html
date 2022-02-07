@@ -25,7 +25,7 @@
     <div class="conteiner">
       <header class="header">
         <nav class="nav">
-          <a class="logo logo--black" href="./index.html">
+          <a class="logo logo__header logo--black" href="./index.html">
             <span class="logo__blu">Web</span>Studio
           </a>
           <ul class="nav-menu header__nav-menu">
@@ -461,13 +461,13 @@
 
     <!-- футер -->
     <footer class="futer">
-      <div class="conteiner">
+      <div class="conteiner conteiner__futer">
         <div class="section-futer">
           <div class="logo-futer">
-            <a class="logo logo--wite" href="./index.html"
+            <a class="logo logo__futer logo--wite" href="./index.html"
               ><span class="logo__blu">Web</span>Studio</a
             >
-            <address id="contacts">
+            <address class="address" id="contacts">
               <p class="logo-futer__text">г. Киев, пр-т Леси Украинки, 26</p>
               <ul class="logo-futer__list">
                 <li>
@@ -482,7 +482,7 @@
 
           <!-- Социальные сети -->
           <div class="social">
-            <h2 class="social-title">присоединяйтесь</h2>
+            <h2 class="social-title social-title--margin">присоединяйтесь</h2>
             <ul class="social__group">
               <li class="social__item">
                 <a class="social__link" href="">
@@ -514,19 +514,13 @@
               </li>
             </ul>
           </div>
+        </div>
 
-          <!-- Подписка -->
-          <form class="form">
-            <div class="form-field">
-              <label class="social-title" for="mail">Подпишитесь на рассылку</label>
-              <input
-                class="form-field__input"
-                type="email"
-                name="mail"
-                id="mail"
-                placeholder="E-mail"
-              />
-            </div>
+        <!-- Подписка -->
+        <div class="form">
+          <h3 class="social-title social-title--margin--f">Подпишитесь на рассылку</h3>
+          <form action="#" class="form-field">
+            <input class="form-field__input" type="email" name="mail" placeholder="E-mail" />
             <button class="form__button" type="submit">
               <svg class="form__icon">
                 <use href="./images/icons-defs.svg#icon-send"></use>

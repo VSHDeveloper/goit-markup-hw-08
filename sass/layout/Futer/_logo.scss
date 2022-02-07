@@ -1,3 +1,15 @@
 .logo-futer {
+  @media (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    margin-right: 0px;
+  }
   margin-right: 70px;
+}
+.logo__futer {
+  @media (max-width: 1199px) {
+    font-size: 24px;
+  }
 }

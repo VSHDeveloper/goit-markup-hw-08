@@ -1,3 +1,11 @@
+.address {
+  @media (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .logo-futer__text {
   color: $primery-wite-color;
   display: block;
@@ -8,9 +16,6 @@
   color: rgba(255, 255, 255, 0.6);
   display: block;
   font-style: normal;
-}
-.logo-futer__list {
-  padding-top: 9px;
 }
 .logo-futer__link {
   color: rgba(255, 255, 255, 0.6);
