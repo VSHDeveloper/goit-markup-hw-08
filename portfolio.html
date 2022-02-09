@@ -25,7 +25,7 @@
     <div class="conteiner">
       <header class="header header__line">
         <nav class="nav">
-          <a class="logo logo--black" href="./index.html">
+          <a class="logo logo__header logo--black" href="./index.html">
             <span class="logo__blu">Web</span>Studio
           </a>
           <ul class="nav-menu header__nav-menu">
@@ -42,7 +42,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="site-info">
+        <ul class="site-info site-info--margin">
           <li class="site-info__item">
             <a class="site-info__link" href="mailto:info@devstudio.com"
               ><svg class="site-info__icon" width="16" height="12">
@@ -60,6 +60,76 @@
             >
           </li>
         </ul>
+
+        <!-- Мобильное меню -->
+        <button class="button-open">
+          <svg
+            class="button-open__icon"
+            width="24"
+            height="16"
+            aria-label="Переключатеь мобильного меню"
+          >
+            <use href="./images/symbol-defs.svg#menu_24px"></use>
+          </svg>
+        </button>
+
+        <div class="menu is-hidden">
+          <button class="menu__button-close">
+            <svg class="menu__icon" width="24" height="16">
+              <use href="./images/symbol-defs.svg#close_24px"></use>
+            </svg>
+          </button>
+
+          <div class="mob-menu">
+            <div class="menu-block">
+              <ul class="menu__list">
+                <li class="menu__link-content">
+                  <a href="./index.html" class="menu__site-nav current">Студия</a>
+                </li>
+                <li class="menu__link-content">
+                  <a href="./portfolio.html" class="menu__site-nav">Портфолио</a>
+                </li>
+                <li class="menu__link-content">
+                  <a href="" class="menu__site-nav">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="contact-block">
+              <ul class="menu__list">
+                <li class="menu__list-contact">
+                  <a href="tel:+380961111111" class="menu__mob-link"> +38 096 111 11 11</a>
+                </li>
+                <li class="menu__list-contact">
+                  <a href="mailto:info@devstudio.com" class="menu__mail-link">
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="social">
+              <ul class="social__menu">
+                <li class="social__list">
+                  <a href="" target="_blank" class="social__link"
+                    >Instagram<span class="social__line"></span
+                  ></a>
+                </li>
+                <li class="social__list">
+                  <a href="" target="_blank" class="social__link"
+                    >Twitter<span class="social__line"></span
+                  ></a>
+                </li>
+                <li class="social__list">
+                  <a href="" target="_blank" class="social__link"
+                    >Facebook<span class="social__line"></span
+                  ></a>
+                </li>
+                <li class="social__list">
+                  <a href="" target="_blank" class="social__link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </header>
     </div>
     <main>
@@ -85,8 +155,8 @@
           </ul>
 
           <ul class="cards section__cards">
-            <a class="cards__link" href="">
-              <li class="cards__item">
+            <li class="cards__item">
+              <a class="cards__link" href="">
                 <div class="cards__imag">
                   <img src="./images/noutbook.jpg" width="370" height="294" alt="ноутбук" />
                   <div class="cards-aside cards__cards-aside">
@@ -101,10 +171,11 @@
                   <h2 class="cards__title">Технокряк</h2>
                   <p class="cards__text">Веб-сайт</p>
                 </div>
-              </li>
-            </a>
-            <a class="cards__link" href="">
-              <li class="cards__item">
+              </a>
+            </li>
+
+            <li class="cards__item">
+              <a class="cards__link" href="">
                 <div class="cards__imag">
                   <img src="./images/nbe.jpg" width="370" height="294" alt="игра нба" />
                   <div class="cards-aside cards__cards-aside">
@@ -115,15 +186,15 @@
                     </p>
                   </div>
                 </div>
-
                 <div class="cards__description">
                   <h2 class="cards__title">Постер New Orlean vs Golden Star</h2>
                   <p class="cards__text">Дизайн</p>
                 </div>
-              </li>
-            </a>
-            <a class="cards__link" href="">
-              <li class="cards__item">
+              </a>
+            </li>
+
+            <li class="cards__item">
+              <a class="cards__link" href="">
                 <div class="cards__imag">
                   <img src="./images/logo.jpg" width="370" height="294" alt="логотип" />
                   <div class="cards-aside cards__cards-aside">
@@ -134,15 +205,15 @@
                     </p>
                   </div>
                 </div>
-
                 <div class="cards__description">
                   <h2 class="cards__title">Ресторан Seafood</h2>
                   <p class="cards__text">Приложение</p>
                 </div>
-              </li>
-            </a>
-            <a class="cards__link" href="">
-              <li class="cards__item">
+              </a>
+            </li>
+
+            <li class="cards__item">
+              <a class="cards__link" href="">
                 <div class="cards__imag">
                   <img src="./images/наушники.jpg" width="370" height="294" alt="наушники" />
                   <div class="cards-aside cards__cards-aside">
@@ -153,15 +224,15 @@
                     </p>
                   </div>
                 </div>
-
                 <div class="cards__description">
                   <h2 class="cards__title">Проект Prime</h2>
                   <p class="cards__text">Маркетинг</p>
                 </div>
-              </li>
-            </a>
-            <a class="cards__link" href="">
-              <li class="cards__item">
+              </a>
+            </li>
+
+            <li class="cards__item">
+              <a class="cards__link" href="">
                 <div class="cards__imag">
                   <img src="./images/коробки.jpg" width="370" height="294" alt="две коробки" />
                   <div class="cards-aside cards__cards-aside">
@@ -172,15 +243,15 @@
                     </p>
                   </div>
                 </div>
-
                 <div class="cards__description">
                   <h2 class="cards__title">Проект Boxes</h2>
                   <p class="cards__text">Приложение</p>
                 </div>
-              </li>
-            </a>
-            <a class="cards__link" href="">
-              <li class="cards__item">
+              </a>
+            </li>
+
+            <li class="cards__item">
+              <a class="cards__link" href="">
                 <div class="cards__imag">
                   <img src="./images/монитор.jpg" width="370" height="294" alt="монитор" />
                   <div class="cards-aside cards__cards-aside">
@@ -191,15 +262,15 @@
                     </p>
                   </div>
                 </div>
-
                 <div class="cards__description">
                   <h2 class="cards__title">Inspiration has no Borders</h2>
                   <p class="cards__text">Веб-сайт</p>
                 </div>
-              </li>
-            </a>
-            <a class="cards__link" href="">
-              <li class="cards__item">
+              </a>
+            </li>
+
+            <li class="cards__item">
+              <a class="cards__link" href="">
                 <div class="cards__imag">
                   <img src="./images/журнал.jpg" width="370" height="294" alt="журнал" />
                   <div class="cards-aside cards__cards-aside">
@@ -210,15 +281,15 @@
                     </p>
                   </div>
                 </div>
-
                 <div class="cards__description">
                   <h2 class="cards__title">Издание Limited Edition</h2>
                   <p class="cards__text">Дизайн</p>
                 </div>
-              </li>
-            </a>
-            <a class="cards__link" href="">
-              <li class="cards__item">
+              </a>
+            </li>
+
+            <li class="cards__item">
+              <a class="cards__link" href="">
                 <div class="cards__imag">
                   <img src="./images/стикер.jpg" width="370" height="294" alt="стикер" />
                   <div class="cards-aside cards__cards-aside">
@@ -229,15 +300,15 @@
                     </p>
                   </div>
                 </div>
-
                 <div class="cards__description">
                   <h2 class="cards__title">Проект LAB</h2>
                   <p class="cards__text">Маркетинг</p>
                 </div>
-              </li>
-            </a>
-            <a class="cards__link" href="">
-              <li class="cards__item">
+              </a>
+            </li>
+
+            <li class="cards__item">
+              <a class="cards__link" href="">
                 <div class="cards__imag">
                   <img
                     src="./images/работазаноутом.jpg"
@@ -253,13 +324,12 @@
                     </p>
                   </div>
                 </div>
-
                 <div class="cards__description">
                   <h2 class="cards__title">Growing Business</h2>
                   <p class="cards__text">Приложение</p>
                 </div>
-              </li>
-            </a>
+              </a>
+            </li>
           </ul>
         </div>
       </section>
@@ -267,13 +337,13 @@
 
     <!-- футер -->
     <footer class="futer">
-      <div class="conteiner">
+      <div class="conteiner conteiner__futer">
         <div class="section-futer">
           <div class="logo-futer">
-            <a class="logo logo--wite" href="./index.html"
+            <a class="logo logo__futer logo--wite" href="./index.html"
               ><span class="logo__blu">Web</span>Studio</a
             >
-            <address id="contacts">
+            <address class="address" id="contacts">
               <p class="logo-futer__text">г. Киев, пр-т Леси Украинки, 26</p>
               <ul class="logo-futer__list">
                 <li>
@@ -288,7 +358,7 @@
 
           <!-- Социальные сети -->
           <div class="social">
-            <h2 class="social-title">присоединяйтесь</h2>
+            <h2 class="social-title social-title--margin">присоединяйтесь</h2>
             <ul class="social__group">
               <li class="social__item">
                 <a class="social__link" href="">
@@ -320,19 +390,13 @@
               </li>
             </ul>
           </div>
+        </div>
 
-          <!-- Подписка -->
-          <form class="form">
-            <div class="form-field">
-              <label class="social-title" for="mail">Подпишитесь на рассылку</label>
-              <input
-                class="form-field__input"
-                type="email"
-                name="mail"
-                id="mail"
-                placeholder="E-mail"
-              />
-            </div>
+        <!-- Подписка -->
+        <div class="form">
+          <h3 class="social-title social-title--margin--f">Подпишитесь на рассылку</h3>
+          <form action="#" class="form-field">
+            <input class="form-field__input" type="email" name="mail" placeholder="E-mail" />
             <button class="form__button" type="submit">
               <svg class="form__icon">
                 <use href="./images/icons-defs.svg#icon-send"></use>

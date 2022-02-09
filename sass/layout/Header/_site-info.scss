@@ -1,46 +1,59 @@
 .site-info {
-  display: block;
+  @media (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  display: flex;
   justify-content: space-between;
   align-items: center;
 
   @media screen and (max-width: 767px) {
     display: none;
   }
+  .site-info--margin {
+    @media (min-width: 768px) and (max-width: 1199px) {
+      margin-left: 84px;
+    }
+  }
 }
-// .site-info__item {
-//   margin-right: 50px;
-// }
-// .site-info__item {
-//   &:last-child {
-//     margin: 0;
-//   }
-// }
-// .site-info__link {
-//   display: flex;
-//   color: $primery-text-color;
-//   font-weight: 500;
-//   font-size: 14px;
-//   line-height: 1.14;
-//   letter-spacing: 0.02em;
-//   align-items: center;
-//   cursor: pointer;
-//   transition-property: color;
-//   transition-duration: 250ms;
-//   transition-timing-function: $animation;
-//   &:hover,
-//   &:focus {
-//     color: $accent-color;
-//   }
-// }
-// .site-info__icon {
-//   display: flex;
-//   fill: $primery-text-color;
-//   margin-right: 10px;
-//   transition-property: color;
-//   transition-duration: 250ms;
-//   transition-timing-function: $animation;
-//   .site-info__link:hover &,
-//   .site-info__link:focus & {
-//     fill: $accent-color;
-//   }
-// }
+.site-info__item {
+  @media (max-width: 1199px) {
+    margin-right: 0px;
+  }
+  margin-right: 50px;
+}
+.site-info__item {
+  &:last-child {
+    margin: 0;
+  }
+}
+.site-info__link {
+  display: flex;
+  color: $primery-text-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  align-items: center;
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $animation;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.site-info__icon {
+  display: flex;
+  fill: $primery-text-color;
+  margin-right: 10px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $animation;
+  .site-info__link:hover &,
+  .site-info__link:focus & {
+    fill: $accent-color;
+  }
+}
