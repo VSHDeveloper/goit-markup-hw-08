@@ -52,6 +52,9 @@
   }
 }
 .menu {
+  @media (min-width: 768px) {
+    display: none;
+  }
   position: fixed;
   left: 0;
   top: 0;
@@ -62,15 +65,23 @@
   padding-bottom: 48px;
   background-color: $primery-wite-color;
 }
-
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
 .menu__button-close {
   position: absolute;
   top: 10px;
-  right: 15px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
   border: none;
   fill: #000;
   background-color: transparent;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
   padding: 0;
   cursor: pointer;
@@ -79,8 +90,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
   fill: $logo-black;
   &:hover,
   &:focus {

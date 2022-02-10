@@ -72,7 +72,7 @@ button {
 
 @media (min-width: 480px) and (max-width: 767px) {
   .conteiner {
-    max-width: 450px;
+    max-width: 480px;
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -493,14 +493,39 @@ button {
   background-color: #ffffff;
 }
 
+@media (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .menu__button-close {
   position: absolute;
   top: 10px;
-  right: 15px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
   border: none;
   fill: #000;
   background-color: transparent;
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: auto;
   padding: 0;
   cursor: pointer;
@@ -519,8 +544,6 @@ button {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 40px;
-  height: 40px;
   fill: #000000;
 }
 
