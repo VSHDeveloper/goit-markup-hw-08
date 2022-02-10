@@ -21,7 +21,13 @@
   @media (max-width: 1199px) {
     margin-right: 0px;
   }
+
   margin-right: 50px;
+}
+@media (max-width: 1199px) {
+  .site-info__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 .site-info__item {
   &:last-child {

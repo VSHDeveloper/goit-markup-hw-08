@@ -621,6 +621,10 @@ button {
   color: #2196f3;
 }
 
+.nav-menu__link.current {
+  color: #2196f3;
+}
+
 .nav-menu__link--current::after {
   content: '';
   position: absolute;
@@ -686,6 +690,12 @@ button {
 @media (max-width: 1199px) {
   .site-info__item {
     margin-right: 0px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .site-info__item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
@@ -1127,6 +1137,10 @@ button {
 
 @media (max-width: 1199px) {
   .card-set {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
@@ -2019,17 +2033,19 @@ button {
   }
 }
 
-.cards__item {
-  margin-top: 30px;
-  margin-left: 30px;
-  -webkit-flex-basis: -webkit-calc(100% / 3 - 30px);
-      -ms-flex-preferred-size: calc(100% / 3 - 30px);
-          flex-basis: calc(100% / 3 - 30px);
-}
-
 @media (min-width: 768px) and (max-width: 1199px) {
   .cards__item {
     margin: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cards__item {
+    -webkit-flex-basis: -webkit-calc(100% / 3 - 30px);
+        -ms-flex-preferred-size: calc(100% / 3 - 30px);
+            flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -2058,10 +2074,14 @@ button {
   overflow: hidden;
 }
 
+.cards__picture {
+  display: block;
+  max-width: 100%;
+}
+
 .cards-aside {
   position: absolute;
-  width: 370px;
-  height: 294px;
+  width: 100%;
 }
 
 .cards__item:hover .cards-aside {
@@ -2090,6 +2110,7 @@ button {
 }
 
 .cards__description {
+  width: 354px;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
