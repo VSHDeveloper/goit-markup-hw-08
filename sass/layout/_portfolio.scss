@@ -88,6 +88,11 @@
   padding-bottom: 94px;
 }
 .cards__item {
+  @media (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
   @media (min-width: 768px) and (max-width: 1199px) {
     margin: 15px;
   }
@@ -136,7 +141,6 @@
   padding: 63px 24px;
 }
 .cards__description {
-  width: 354px;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
@@ -145,7 +149,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
 }
 .cards__text {
   color: $primery-text-color;
