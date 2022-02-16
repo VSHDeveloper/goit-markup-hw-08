@@ -10,16 +10,16 @@
   color: $primery-wite-color;
   display: block;
   font-style: normal;
-  margin-top: 20px;
+  margin-bottom: 8px;
 }
 .logo-futer__link {
   color: rgba(255, 255, 255, 0.6);
   display: block;
   font-style: normal;
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
 }
-.logo-futer__link {
-  color: rgba(255, 255, 255, 0.6);
-  display: block;
-  font-style: normal;
-  padding-top: 9px;
+.logo-futer__link:not(:last-child) {
+  margin-bottom: 8px;
 }

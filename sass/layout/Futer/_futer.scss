@@ -1,5 +1,7 @@
 .futer {
   background-color: $background-color-futer;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .conteiner__futer {
   @media (min-width: 768px) and (max-width: 1199px) {
@@ -12,8 +14,8 @@
   }
 
   display: flex;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  // padding-top: 60px;
+  // padding-bottom: 60px;
   justify-content: space-between;
 }
 .section-futer {

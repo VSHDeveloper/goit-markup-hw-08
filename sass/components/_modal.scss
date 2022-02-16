@@ -213,8 +213,9 @@
   justify-content: center;
   margin: auto;
   margin-top: 30px;
-  width: 200px;
-  height: 50px;
+  padding: 10px 56px;
+  // width: 200px;
+  // height: 50px;
   color: $primery-wite-color;
   background-color: $accent-color;
   font-weight: bold;
@@ -222,6 +223,7 @@
   line-height: 1.9;
   letter-spacing: 0.06em;
   cursor: pointer;
+  border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition-property: color, background-color;

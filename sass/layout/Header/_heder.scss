@@ -80,16 +80,16 @@
   margin-left: auto;
   padding: 0;
   cursor: pointer;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
 }
 .menu__icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: $logo-black;
-  &:hover,
-  &:focus {
-    fill: $accent-color;
-  }
+  // fill: $logo-black;
 }
 .mob-menu {
   display: flex;
@@ -140,6 +140,7 @@
 }
 .social-menu__list {
   display: flex;
+  flex-wrap: wrap;
 }
 .social-menu__link {
   @media (min-width: 480px) {
