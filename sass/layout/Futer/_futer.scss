@@ -12,10 +12,11 @@
     flex-direction: column;
     align-items: center;
   }
+  @media (min-width: 1200px) {
+    align-items: baseline;
+  }
 
   display: flex;
-  // padding-top: 60px;
-  // padding-bottom: 60px;
   justify-content: space-between;
 }
 .section-futer {
@@ -24,10 +25,10 @@
     align-items: center;
   }
   @media (min-width: 768px) and (max-width: 1199px) {
-    display: flex;
+    // display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
-
+  align-items: baseline;
   display: flex;
 }
